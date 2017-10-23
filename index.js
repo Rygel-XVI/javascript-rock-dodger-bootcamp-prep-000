@@ -105,6 +105,7 @@ function createRock(x) {
      */
      if (rocktop >= 380) {
        rock.remove()
+       debugger
      }
   }
 
@@ -129,7 +130,6 @@ function createRock(x) {
    window.removeEventListener(`keydown`, moveDodger)
    for (var i = 0; i < ROCKS.length; i++) {
      ROCKS[i].remove()
-     debugger
 /*     if (i === ROCKS.length - 1) {
      alert("YOU LOSE!")
    }*/
