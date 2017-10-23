@@ -87,10 +87,10 @@ function createRock(x) {
      */
      var rocktop = positionToInteger(rock.style.top)
      if (rocktop > 397) {debugger}
-     if (rocktop < 380) {
+     if (rocktop < 400) {
        rock.style.top = `${rocktop + 2}px`
        rocktop = rocktop + 2
-     } if (rocktop >= 400) {
+     } if (rocktop === 400) {
         rock.remove()
         ROCKS.unshift()
         return
