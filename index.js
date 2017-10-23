@@ -134,8 +134,8 @@ function createRock(x) {
      alert("YOU LOSE!")
    }*/
     }
-    alert("YOU LOSE!")
     ROCKS.length = 0
+    alert("YOU LOSE!")
  }
 
 function moveDodger(e) {
