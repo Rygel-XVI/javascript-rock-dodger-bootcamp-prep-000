@@ -88,7 +88,11 @@ function createRock(x) {
      var rocktop = positionToInteger(rock.style.top)
      if (rocktop < 380) {
        rock.style.top = `${rocktop + 2}px`
-     }
+     } else if (rocktop >= 380) {
+        debugger
+        console.log("removed")
+        rock.remove()
+      }
      if (checkCollision(rock)) {
        endGame()
        return
@@ -103,11 +107,7 @@ function createRock(x) {
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
      */
-     if (rocktop >= 380) {
-       debugger
-       console.log("removed")
-       this.rock.remove()
-     }
+
   }
 
   // We should kick of the animation of the rock around here
