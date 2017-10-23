@@ -91,6 +91,7 @@ function createRock(x) {
        rock.style.top = `${rocktop + 2}px`
      } else if (rocktop >= 380) {
         rock.remove()
+        return
       }
      if (checkCollision(rock)) {
        endGame()
