@@ -86,7 +86,7 @@ function createRock(x) {
      * we should call endGame()
      */
      var rocktop = positionToInteger(rock.style.top)
-     if (rocktop === 378) {debugger}
+     if (rocktop === 398) {debugger}
      if (rocktop < 380) {
        rock.style.top = `${rocktop + 2}px`
        rocktop = rocktop + 2
