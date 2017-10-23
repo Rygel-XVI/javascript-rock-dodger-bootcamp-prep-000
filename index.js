@@ -104,8 +104,8 @@ function createRock(x) {
      * we should remove the rock from the DOM
      */
      if (rocktop >= 380) {
-       rock.remove()
        debugger
+       rock.remove()
      }
   }
 
