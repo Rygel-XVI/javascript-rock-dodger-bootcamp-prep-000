@@ -93,7 +93,7 @@ function createRock(x) {
      } if (rocktop >= 400) {
         rock.remove()
         ROCKS.shift()
-        
+        return
     } else if (checkCollision(rock)) {
        endGame()
        return
