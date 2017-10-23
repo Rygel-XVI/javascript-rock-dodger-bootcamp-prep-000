@@ -90,7 +90,7 @@ function createRock(x) {
      if (rocktop < 380) {
        rock.style.top = `${rocktop + 2}px`
        rocktop = rocktop + 2
-     } if (rocktop >= 380) {
+     } if (rocktop >= 400) {
         rock.remove()
         return
     } else if (checkCollision(rock)) {
